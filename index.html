@@ -15,11 +15,11 @@
 
     </header>
     <main>
-        <!--main container  -->
+<!--main container  -->
         <div class="flex flex-col lg:flex-row mt-6">
-            <!-- shape container -->
+<!-- shape container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <!-- Triangle card -->
+<!-- Triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -44,6 +44,8 @@
                         </div>
                     </div>
                 </div>
+
+<!-- rectangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -64,12 +66,61 @@
                                 class="bold text-fuchsia-600"> cm <sup>2</sup> </p>
 
                         <div class="card-actions justify-center mt-5 ">
-                            <button onclick="calculateRectanglArea()" class="btn btn-primary w-full">calculator</button>
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">calculator</button>
+                        </div>
+                    </div>
+                </div>
+ <!-- parallelogram card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <p>
+                            <!-- base input box -->
+                            <input type="text" class="border text-xl bg-gray-200 w-24 px-2" name="" id="parallelogram-base"
+                                placeholder="base">
+                            <span class="ml-1">cm</span>
+                            <!-- height input box -->
+                            <input type="text" class="border text-xl bg-gray-200 w-24 px-2" name="" id="parallelogram-height"
+                                placeholder="height">
+                            <span class="ml-1">cm</span>
+                        </p>
+
+                        <p> Area: <span id="parallelogram-area" class="font-bold text-2xl text-gray-600">0 </span><span
+                                class="bold text-fuchsia-600"> cm <sup>2</sup> </p>
+
+                        <div class="card-actions justify-center mt-5 ">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">calculator</button>
+                        </div>
+                    </div>
+                </div>
+<!-- ellipse card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">ellipse</h2>
+                        <p>Area (A) = &#960; x a x b </p>
+                        <p>
+                            <!-- first radius input box -->
+                            <input type="text" class="border text-xl bg-gray-200 w-24 px-2" name="" id="ellipse-major-radius"
+                                placeholder="large">
+                            <span class="ml-1">cm</span>
+                            <!-- height input box -->
+                            <input type="text" class="border text-xl bg-gray-200 w-24 px-2" name="" id="ellipse-minor-radius"
+                                placeholder="small">
+                            <span class="ml-1">cm</span>
+                        </p>
+
+                        <p> Area: <span id="ellipse-area" class="font-bold text-2xl text-gray-600">0 </span><span
+                                class="bold text-fuchsia-600"> cm <sup>2</sup> </p>
+
+                        <div class="card-actions justify-center mt-5 ">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculator</button>
                         </div>
                     </div>
                 </div>
 
-                
                     <!-- second card -->
                     <div class="card w-96 bg-base-100 shadow-xl">
                         <figure><img src="/images/triangle.png" alt="Shoes" /></figure>

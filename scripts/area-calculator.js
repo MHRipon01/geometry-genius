@@ -39,3 +39,46 @@ lengthField.value = ""
     areaSpan = document.getElementById("rectangle-area")
     areaSpan.innerText = area;
 }
+
+function calculateParallelogramArea(){
+    const base = getInputValue("parallelogram-base")
+   console.log(base)
+//   fieldId.value = ""
+   const height = getInputValue('parallelogram-height')
+//    fieldId.value = ""
+   console.log(height)
+   
+   const area = base * height;
+   
+   setElementInnerText('parallelogram-area' , area);
+//    fieldId.value = ""
+}
+
+function calculateEllipseArea(){
+    const majorRadius = getInputValue("ellipse-major-radius")
+    console.log('clicked')
+
+    const minorRadius = getInputValue('ellipse-minor-radius')
+    console.log('clickedfghdghh')
+
+    const area = 3.1416 * majorRadius * minorRadius
+    setElementInnerText("ellipse-area" , area);
+}
+
+
+
+function getInputValue(fieldId){
+    const inputField = document.getElementById(fieldId);
+    const inputValueText = inputField.value ;
+    const value = parseFloat(inputValueText);
+    
+    return value ;
+}
+
+function setElementInnerText(elementId , area){
+    const element = document.getElementById(elementId)
+    element.innerText = area;
+
+
+}
+
